@@ -1,23 +1,28 @@
 .card {
   transition: transform 0.3s ease;
 }
+
 .card:hover {
   transform: scale(1.05);
 }
+
 /* Общие стили */
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
 /* Кастомные цвета для навбара */
 .navbar-brand {
   font-weight: bold;
   font-size: 1.5rem;
   letter-spacing: 1px;
 }
+
 .navbar-dark .navbar-nav .nav-link:hover {
   color: #ffc107 !important;
   transition: color 0.3s ease;
 }
+
 /* Улучшение Hero-секции */
 #home {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -26,30 +31,37 @@ body {
   display: flex;
   align-items: center;
 }
+
 #home h1 {
   color: white;
 }
+
 #home .lead {
   color: rgba(255, 255, 255, 0.9);
 }
+
 #home .btn {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
 }
+
 #home .btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
+
 /* Анимация для карточек */
 .card {
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
 }
+
 .card:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
 }
+
 /* Стилизация кнопок */
 .btn {
   border-radius: 25px;
@@ -57,11 +69,13 @@ body {
   font-weight: 500;
   transition: all 0.3s ease;
 }
+
 /* Улучшение формы */
 .form-control:focus {
   border-color: #667eea;
   box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
 }
+
 /* Анимация для бейджей */
 .badge {
   padding: 8px 15px;
@@ -69,30 +83,36 @@ body {
   font-weight: 500;
   transition: transform 0.2s ease;
 }
+
 .badge:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
+
 /* Стилизация прогресс-баров */
 .progress {
   height: 25px;
   border-radius: 15px;
   background-color: #e9ecef;
 }
+
 .progress-bar {
   border-radius: 15px;
   font-weight: bold;
   line-height: 25px;
 }
+
 /* Улучшение аккордеона */
 .accordion-button:not(.collapsed) {
   background-color: #667eea;
   color: white;
 }
+
 .accordion-button:focus {
   box-shadow: none;
   border-color: #667eea;
 }
+
 /* Футер */
 footer {
   background-color: #212529;
@@ -100,35 +120,43 @@ footer {
   padding: 40px 0;
   margin-top: 80px;
 }
+
 footer h5 {
   color: #ffc107;
   margin-bottom: 20px;
 }
+
 footer a {
   color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
   transition: color 0.3s ease;
 }
+
 footer a:hover {
   color: #ffc107;
 }
+
 /* Адаптивность */
 @media (max-width: 768px) {
   #home {
     min-height: 300px;
   }
+
   #home h1 {
     font-size: 2rem;
   }
+
   .card {
     margin-bottom: 20px;
   }
 }
+
 /* ВРЕМЕННАЯ ШКАЛА */
 .timeline {
   position: relative;
   padding: 20px 0;
 }
+
 /* Центральная линия */
 .timeline::before {
   content: "";
@@ -140,6 +168,7 @@ footer a:hover {
   background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
   border-radius: 2px;
 }
+
 /* Контейнер события */
 .timeline-item {
   position: relative;
@@ -149,6 +178,7 @@ footer a:hover {
   text-align: right;
   margin-left: 50%;
 }
+
 /* Левые элементы */
 .timeline-item-left {
   margin-left: 0 !important;
@@ -156,6 +186,7 @@ footer a:hover {
   padding-left: 40px;
   text-align: left;
 }
+
 /* Круглые точки на линии */
 .timeline-item::before {
   content: "";
@@ -170,16 +201,19 @@ footer a:hover {
   z-index: 1;
   transition: transform 0.3s ease;
 }
+
 /* Точки для левых элементов */
 .timeline-item-left::before {
   right: auto;
   left: -8px;
 }
+
 /* Увеличение точки при наведении */
 .timeline-item:hover::before {
   transform: scale(1.5);
   background: #667eea;
 }
+
 /* Карточка с контентом */
 .timeline-content {
   background: white;
@@ -188,26 +222,32 @@ footer a:hover {
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
+
 .timeline-content:hover {
   transform: translateY(-5px);
 
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
+
 .timeline-content h5 {
   color: #333;
   margin-bottom: 10px;
   font-weight: 600;
 }
+
 .timeline-content .badge {
   font-size: 0.85rem;
   padding: 5px 12px;
 }
+
 /* Мобильная версия */
 @media (max-width: 768px) {
+
   /* Линия слева */
   .timeline::before {
     left: 20px;
   }
+
   /* Все элементы слева */
   .timeline-item,
   .timeline-item-left {
@@ -217,6 +257,7 @@ footer a:hover {
     padding-right: 0;
     text-align: left;
   }
+
   /* Точки слева */
   .timeline-item::before,
   .timeline-item-left::before {
@@ -224,23 +265,49 @@ footer a:hover {
     right: auto;
   }
 }
+
 body {
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   min-height: 100vh;
 }
+
 .timeline-content {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
 }
+
 @keyframes pulse {
+
   0%,
   100% {
     box-shadow: 0 0 0 0 rgba(102, 126, 234, 0.7);
   }
+
   50% {
     box-shadow: 0 0 0 10px rgba(102, 126, 234, 0);
   }
 }
+
 .timeline-item::before {
   animation: pulse 2s infinite;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.social-icon {
+  font-size: 1.8rem;
+  margin-right: 15px;
+  color: rgba(255, 255, 255, 0.7);
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #ffc107;
+}
+
+.project-card .card-img-top {
+  height: 200px;
+  object-fit: cover;
 }

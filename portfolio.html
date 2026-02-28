@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MyPortfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">О себе</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Навыки</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Проекты</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid bg-light py-5" id="home">
+        <div class="container text-center">
+            <h1 class="display-4">Привет, я <span style="color: #ffc107;">Телятникова Елизавета Петровна</span></h1>
+            <p class="lead">Студент IT · Создаю современные и адаптивные сайты</p>
+            <a href="#portfolio" class="btn btn-warning btn-lg px-5 py-2">Смотреть работы</a>
+        </div>
+    </div>
+    <section id="about" class="container my-5 py-5">
+        <h2 class="text-center mb-5 display-5">О себе</h2>
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center mb-4 mb-md-0">
+                <img src="img/avatar.jpg" alt="Фото" class="avatar rounded-circle img-fluid">
+            </div>
+            <div class="col-md-8">
+                <p class="fs-5">Я — студент IT направления, имею навыки в разработке веб-сайтов и приложений, а так же
+                    изучила Bootstrap и это мой сайт с его использованием.</p>
+                <div class="mt-4">
+                    <span class="badge bg-primary me-2 p-3">HTML5</span>
+                    <span class="badge bg-success me-2 p-3">CSS3</span>
+                    <span class="badge bg-danger me-2 p-3">Bootstrap</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 display-5">Мои навыки</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-4 shadow-sm border-0">
+                        <i class="bi bi-code-slash display-1 text-primary mb-3"></i>
+                        <h4 class="card-title">Frontend-разработка</h4>
+                        <p class="card-text text-muted">Вёрстка адаптивных интерфейсов, работа с Bootstrap, базовый
+                            JavaScript.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-4 shadow-sm border-0">
+                        <i class="bi bi-phone display-1 text-success mb-3"></i>
+                        <h4 class="card-title">Адаптивный дизайн</h4>
+                        <p class="card-text text-muted">Сайты корректно отображаются на любых устройствах: от мобильных
+                            телефонов до десктопов.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-4 shadow-sm border-0">
+                        <i class="bi bi-tools display-1 text-warning mb-3"></i>
+                        <h4 class="card-title">Работа с Bootstrap</h4>
+                        <p class="card-text text-muted">Использую сетки, компоненты, утилиты и кастомизацию для быстрой
+                            разработки.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="container my-5 py-5">
+        <h2 class="text-center mb-5 display-5">Мои проекты</h2>
+        <div class="row g-4">
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card project-card h-100 border-0 shadow-sm">
+                    <img src="https://placeholder.apptor.studio/600/400/project1.png" class="card-img-top img-fluid"
+                        alt="Проект 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Корпоративный сайт</h5>
+                        <p class="card-text text-muted">Современный сайт для IT-компании</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card project-card h-100 border-0 shadow-sm">
+                    <img src="https://placeholder.apptor.studio/600/400/project2.png" class="card-img-top img-fluid"
+                        alt="Проект 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Интернет-магазин</h5>
+                        <p class="card-text text-muted">E-commerce платформа с корзиной</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card project-card h-100 border-0 shadow-sm">
+                    <img src="https://placeholder.apptor.studio/600/400/project5.png" class="card-img-top img-fluid"
+                        alt="Проект 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Блог</h5>
+                        <p class="card-text text-muted">Платформа для публикаций</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card project-card h-100 border-0 shadow-sm">
+                    <img src="https://placeholder.apptor.studio/600/400/project6.png" class="card-img-top img-fluid"
+                        alt="Проект 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Портфолио</h5>
+                        <p class="card-text text-muted">Сайт-портфолио на Bootstrap.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 display-5">Свяжитесь со мной</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form class="row g-3 needs-validation" novalidate>
+                        <div class="col-md-6">
+                            <label for="name" class="form-label">Ваше имя</label>
+                            <input type="text" class="form-control" id="name"
+                                placeholder="Телятникова Елизавета Петровна" required>
+                            <div class="invalid-feedback">Пожалуйста, введите имя.</div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="example@example.com"
+                                required>
+                            <div class="invalid-feedback">Введите корректный email.</div>
+                        </div>
+                        <div class="col-12">
+                            <label for="message" class="form-label">Сообщение</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Ваше сообщение..."
+                                required></textarea>
+                            <div class="invalid-feedback">Напишите сообщение.</div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button class="btn btn-primary btn-lg px-5" type="submit">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>О проекте</h5>
+                    <p>Я создаю современные веб-решения для вашего бизнеса с использованием передовых технологий.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Быстрые ссылки</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-white-50 text-decoration-none">Главная</a></li>
+                        <li><a href="#about" class="text-white-50 text-decoration-none">О себе</a></li>
+                        <li><a href="#skills" class="text-white-50 text-decoration-none">Навыки</a></li>
+                        <li><a href="#portfolio" class="text-white-50 text-decoration-none">Проекты</a></li>
+                        <li><a href="#contact" class="text-white-50 text-decoration-none">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Контакты</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-envelope me-2"></i> ttelatnikova1@yandex.ru</li>
+                        <li><i class="bi bi-telephone me-2"></i> +7 (937) 090-73-01</li>
+                        <li><i class="bi bi-geo-alt me-2"></i> Волжский, ул. Дружбы</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="bg-secondary">
+            <div class="text-center">
+                <p class="mb-0">© 2026 Телятникова Е.П. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        (function () {
+            'use strict';
+            const forms = document.querySelectorAll('.needs-validation');
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    } else {
+                        event.preventDefault();
+                        alert('Форма успешно отправлена!');
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        })();
+    </script>
+</body>
+
+</html>
